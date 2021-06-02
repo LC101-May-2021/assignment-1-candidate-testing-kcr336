@@ -16,15 +16,15 @@ let candidateAnswers = [];
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
 let askForName = "What is your name?";
-let candidateName= input.question(askForName);
+candidateName= input.question(askForName);
 
-return candidateName;
+// return candidateName;
 }
 
 
-function askQuestion(candidateName) {
+function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-console.log("Hello "+candidateName+", welcome to our test. Let's get started.");
+console.log(`Hello ${candidateName}, welcome to our test. Let's get started.`);
 let candidateAnswer = input.question(question);
 if (candidateAnswer === correctAnswer) {
   console.log("Question one is correct.")
