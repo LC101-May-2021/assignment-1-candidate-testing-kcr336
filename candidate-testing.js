@@ -18,25 +18,26 @@ function askForName() {
 let askForName = "What is your name?";
 candidateName= input.question(askForName);
 
-// return candidateName;
+return candidateName;
 }
 
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 console.log(`Hello ${candidateName}, welcome to our test. Let's get started.`);
-let candidateAnswer = input.question(question);
+candidateAnswer = input.question(question);
+
+return candidateAnswer;
+}
+
+function gradeQuiz() {
+
+  // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 if (candidateAnswer === correctAnswer) {
   console.log("Question one is correct.")
 }else {
   console.log("Question one is incorrect.")
 }
-}
-
-function gradeQuiz(candidateAnswers) {
-
-  // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-
 
   let grade;
   
