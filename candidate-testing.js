@@ -1,4 +1,4 @@
-
+//This is my code, enjoy
 const input = require('readline-sync');
 
 let candidateName="";
